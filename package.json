@@ -1,0 +1,15 @@
+{
+  "name": "crandowjs",
+  "version": "1.0.1",
+  "description": "simple func for common",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crandow"
+  ],
+  "author": "qinle",
+  "license": "ISC"
+}
