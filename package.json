@@ -11,5 +11,8 @@
     "crandow"
   ],
   "author": "qinle",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }
