@@ -1,9 +1,9 @@
 {
   "name": "crandowjs",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "simple func for common",
-  "main": "index.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,9 @@
   ],
   "author": "qinle",
   "license": "ISC",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "typescript": "^4.1.3"
   }

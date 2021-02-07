@@ -7,12 +7,12 @@
 // ```
 //  */
 
-interface returnType {
+export interface returnType {
   curCountSec: number
   curTime: number
 }
 
-interface paramsType {
+export interface paramsType {
   callback?(params?: returnType): void
   secCorrect?: number
   interval?: number
