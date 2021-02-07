@@ -1,2 +1,25 @@
-export * from './utils/common'
-export * from './utils/Clocker'
+export {
+  isUndef,
+  isDef,
+  isTrue,
+  isFalse,
+  isPrimitive,
+  isObject,
+  toRawType,
+  isPlainObject,
+  isRegExp,
+  isValidArrayIndex,
+  isPromise,
+  toString,
+  toNumber,
+  makeMap,
+  remove,
+  toArray,
+  noop,
+  looseEqual,
+  formatTime,
+  throttle,
+  debounce,
+  formatPhoneNum
+} from './utils/common'
+export { Clocker } from './utils/Clocker'

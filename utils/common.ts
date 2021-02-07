@@ -107,15 +107,6 @@ export function makeMap(str: string, expectsLowerCase?: boolean): (key: string) 
   }
   return expectsLowerCase ? val => map[val.toLowerCase()] : val => map[val]
 }
-/**
- * Check if a tag is a built-in tag.
- */
-export const isBuiltInTag = makeMap('slot,component', true)
-
-/**
- * Check if an attribute is a reserved attribute.
- */
-export const isReservedAttribute = makeMap('key,ref,slot,slot-scope,is')
 
 /**
  * Remove an item from an array.
@@ -226,7 +217,7 @@ export function formatTime(time: number, format = 'yyyy-MM-dd HH:mm:ss') {
 }
 
 // 节流
-function throttle (fn: { apply: (arg0: any, arg1: any[]) => void }, t: number) {
+export function throttle (fn: { apply: (arg0: any, arg1: any[]) => void }, t: number) {
   let flag = true
   const interval = t || 500
   return function (this: any, ...args: any) {
@@ -241,7 +232,7 @@ function throttle (fn: { apply: (arg0: any, arg1: any[]) => void }, t: number) {
 }
 
 // 防抖
-function debounce (fn: { apply: (arg0: any, arg1: any) => void }, t: number) {
+export function debounce (fn: { apply: (arg0: any, arg1: any) => void }, t: number) {
   let timeId: any = null
   const delay = t || 500
   return function (this: any, ...args: any) {
